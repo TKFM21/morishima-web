@@ -9,16 +9,19 @@ import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 
 const IndexPage = ({data}) => {
-
+  
 return (
   <Layout>
     <SEO title="Home" />
     <section className="hero">
-      <Img fluid={data.coffeeShop.childImageSharp.fluid} className="hero-image"/>
+      <Img fluid={data.top.childImageSharp.fluid} className="hero-image"/>
     </section>
     <section className="container">
       <span className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        一泊一組限定、一棟貸切りの宿です。<br></br>
+        家具・家電など一式が揃っていますので、ご自由にお使いいただけます。<br></br>
+        宿泊だけでなく、お打合せや教室などの時間単位でのご利用も可能です。<br></br>
+        柔軟に対応いたしますので、お気軽にお問合せください！
       </span>
       <div className="gallery-grid">
         <Img fluid={data.latte.childImageSharp.fluid} className="gallery-img1"/>
@@ -36,9 +39,9 @@ return (
     </section>
     {typeof window !== 'undefined' &&
       <LeafletMap
-        position={[55.952103, -3.196175]} // Your Coordinates
-        zoom={18} // Zoom Level
-        markerText={"Local Cafe, 65 Park Row"} // Icon text
+        position={[36.299465, 138.243906]} // Your Coordinates
+        zoom={10} // Zoom Level
+        markerText={"一棟貸しの宿 もりしま"} // Icon text
       />
     }
     <Footer />
@@ -58,7 +61,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    coffeeShop: file(relativePath: { eq: "coffee-shop-exterior.jpg" }) {
+    top: file(relativePath: { eq: "top-morishima.jpg" }) {
       ...fluidImage
     }
     coffeePortrait: file(relativePath: { eq: "coffee-portrait.jpg" }) {
@@ -68,6 +71,9 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     coffeeBags: file(relativePath: { eq: "coffee-bags.jpg" }) {
+      ...fluidImage
+    }
+    logo: file(relativePath: { eq: "logo-morishima.png" }) {
       ...fluidImage
     }
   }

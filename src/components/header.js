@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 const Header = ({ siteTitle }) => (
   <header>
     <span>{siteTitle}</span>
-    <span>65 Park Row, EH1 4PE</span>
+    <span>長野県上田市武石</span>
   </header>
 )
 

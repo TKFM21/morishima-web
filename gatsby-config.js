@@ -6,9 +6,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Cafe`,
-    description: `  `,
-    author: `Cristiano Crolla`,
+    title: `一棟貸しの宿 『もりしま』`,
+    description: `一泊一組限定、一棟貸し切りで宿泊ができます。`,
+    author: `もりしま`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `kelvinpocketcafe`, // Your Instagram
+        username: `yado.morishima`, // Your Instagram
       },
     },
     {

@@ -7,7 +7,7 @@ const typography = new Typography({
   blockMarginBottom: 0.75,
   googleFonts: [
     {
-      name: "Nunito",
+      name: "Noto Sans JP",
       styles: ["400"],
     },
     {
@@ -15,8 +15,8 @@ const typography = new Typography({
       styles: ["400", "400i", "700", "700i"],
     },
   ],
-  headerFontFamily: ["Nunito", "sans-serif"],
-  bodyFontFamily: ["Raleway", "sans-serif"],
+  headerFontFamily: ["Noto Sans JP", "sans-serif"],
+  bodyFontFamily: ["Noto Sans JP", "sans-serif"],
   headerColor: "hsla(0,0%,0%,1)",
   bodyColor: "hsla(0,0%,0%,0.8)",
   headerWeight: 400,

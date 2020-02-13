@@ -16,8 +16,6 @@ const Instagram = () => {
       edges {
         node {
           id
-          likes
-          comments
           mediaType
           preview
           original
@@ -38,16 +36,12 @@ const Instagram = () => {
   return (
     <div className="insta">
       <h2>INSTAGRAM</h2>
-      <span>@kelvinpocketcafe</span>
+      <span>@yado.morishima</span>
       <ul className="insta-posts">
           {instaPosts.map(({ node }) => {
             return (
               <li key={node.id} className="insta-post">
                 <Img fixed={node.localFile.childImageSharp.fixed} />
-                <div className="overlay">
-                  <img className="icon" src={require('../images/like.png')} alt="like icon"/>
-                  <p className="text">{node.likes}</p>
-                </div>
               </li>
             )
           })}

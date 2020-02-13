@@ -19,13 +19,6 @@ These are the Contentful Content Models which make up the menu section of the si
 ![Menu Item Image](https://github.com/crolla97/gatsby-starter-cafe/blob/master/src/images/README-2.png)
 
 ## :memo: Getting Started
-Create a ```.env``` file in your root directory:
-
-```shell
-CONTENTFUL_SPACEID=YOUR_SPACE_ID
-CONTENTFUL_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
-```
-
 Install dependencies:
 ```npm install```
 
