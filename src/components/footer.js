@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react"
 
 const Footer = () => {
-
   return (
     <footer>
       <section>
@@ -11,21 +10,31 @@ const Footer = () => {
           <span>長野県上田市武石鳥屋146-1</span>
         </div>
         <div className="hours">
-          <h3>営業時間</h3>
-          <span>不定休</span>
-          <span>お気軽にお問合せください！</span>
+          <h3>ご宿泊</h3>
+          <span>チェックイン　15:00 - 20:00</span>
+          <span>チェックアウト　11:00</span>
         </div>
         <div className="contact">
           <h3>お問合せ</h3>
-          <span>LINE公式アカウント</span>
-          <span>@yourSocialName</span>
+          <span className="line">
+            <a href="https://lin.ee/miMytzL">
+              <img
+                height="36"
+                border="0"
+                src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+              />
+            </a>
+          </span>
         </div>
       </section>
-      <p>Built by
-        <a href="#" target="_blank" rel="noopener noreferrer">ITサポート aim</a>
+      <p>
+        Copyright &copy; 2020 
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          ITサポート aim
+        </a>
       </p>
     </footer>
   )
 }
 
-export default Footer;
+export default Footer

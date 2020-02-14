@@ -9,7 +9,7 @@ import LeafletMap from '../components/leafletMap'
 import Footer from '../components/footer'
 
 const IndexPage = ({data}) => {
-  
+
 return (
   <Layout>
     <SEO title="Home" />
@@ -18,19 +18,18 @@ return (
     </section>
     <section className="container">
       <span className="description">
-        一泊一組限定、一棟貸切りの宿です。<br></br>
-        家具・家電など一式が揃っていますので、ご自由にお使いいただけます。<br></br>
-        宿泊だけでなく、お打合せや教室などの時間単位でのご利用も可能です。<br></br>
-        柔軟に対応いたしますので、お気軽にお問合せください！
+        一泊一組限定、一棟貸切りの宿
       </span>
       <div className="gallery-grid">
-        <Img fluid={data.latte.childImageSharp.fluid} className="gallery-img1"/>
-        <Img fluid={data.coffeeBags.childImageSharp.fluid} className="gallery-img2"/>
-        <Img fluid={data.coffeePortrait.childImageSharp.fluid} className="gallery-img3"/>
+        <Img fluid={data.bbq.childImageSharp.fluid} className="gallery-img1"/>
+        <Img fluid={data.exterior.childImageSharp.fluid} className="gallery-img2"/>
+        <Img fluid={data.living.childImageSharp.fluid} className="gallery-img3"/>
       </div>
       <div className="about-grid">
-        <h2>WE'RE CRAZY ABOUT COFFEE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>快適なご滞在をサポート</h2>
+        <p>家具・家電など一式が揃っていますので、ご自由にお使いいただけます。<br></br>
+        宿泊だけでなく、お打合せや教室などの時間単位でのご利用も可能です。<br></br>
+        柔軟に対応いたしますので、お気軽にお問合せください！</p>
       </div>
     </section>
     <div className="parallax"></div>
@@ -64,13 +63,13 @@ export const pageQuery = graphql`
     top: file(relativePath: { eq: "top-morishima.jpg" }) {
       ...fluidImage
     }
-    coffeePortrait: file(relativePath: { eq: "coffee-portrait.jpg" }) {
+    living: file(relativePath: { eq: "living.JPG" }) {
       ...fluidImage
     }
-    latte: file(relativePath: { eq: "latte.jpg" }) {
+    bbq: file(relativePath: { eq: "bbq.JPG" }) {
       ...fluidImage
     }
-    coffeeBags: file(relativePath: { eq: "coffee-bags.jpg" }) {
+    exterior: file(relativePath: { eq: "exterior.JPG" }) {
       ...fluidImage
     }
     logo: file(relativePath: { eq: "logo-morishima.png" }) {
