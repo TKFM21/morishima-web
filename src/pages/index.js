@@ -18,7 +18,7 @@ return (
     </section>
     <section className="container">
       <span className="description">
-        一泊一組限定、一棟貸切りの宿
+        一泊一組限定<br />一棟貸切りの宿
       </span>
       <div className="gallery-grid">
         <Img fluid={data.bbq.childImageSharp.fluid} className="gallery-img1"/>
