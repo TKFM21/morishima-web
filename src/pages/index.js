@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
         <LeafletMap
           position={[36.299465, 138.243906]} // Your Coordinates
           zoom={10} // Zoom Level
-          markerText={"一棟貸しの宿 もりしま"} // Icon text
+          markerText={"一棟貸しの宿 もりしま"} // Icon text.
         />
       )}
       <Footer />
