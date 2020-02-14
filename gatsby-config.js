@@ -55,7 +55,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "morishima-web20200214",
+        bucketName: "www.morishima1.com",
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
