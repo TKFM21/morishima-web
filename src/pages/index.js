@@ -63,13 +63,13 @@ export const pageQuery = graphql`
     top: file(relativePath: { eq: "top-morishima.jpg" }) {
       ...fluidImage
     }
-    living: file(relativePath: { eq: "living.JPG" }) {
+    living: file(relativePath: { eq: "living.jpg" }) {
       ...fluidImage
     }
-    bbq: file(relativePath: { eq: "bbq.JPG" }) {
+    bbq: file(relativePath: { eq: "bbq.jpg" }) {
       ...fluidImage
     }
-    exterior: file(relativePath: { eq: "exterior.JPG" }) {
+    exterior: file(relativePath: { eq: "exterior.jpg" }) {
       ...fluidImage
     }
     logo: file(relativePath: { eq: "logo-morishima.png" }) {
