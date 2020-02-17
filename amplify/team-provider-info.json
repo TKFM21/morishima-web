@@ -1,15 +1,15 @@
 {
     "prod": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-morishima-web-prod-140051-authRole",
-            "UnauthRoleArn": "arn:aws:iam::379668596230:role/amplify-morishima-web-prod-140051-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::379668596230:role/amplify-morishima-web-prod-140051-authRole",
+            "AuthRoleName": "amplify-morishima-web-prod-141205-authRole",
+            "UnauthRoleArn": "arn:aws:iam::379668596230:role/amplify-morishima-web-prod-141205-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::379668596230:role/amplify-morishima-web-prod-141205-authRole",
             "Region": "ap-northeast-1",
-            "DeploymentBucketName": "amplify-morishima-web-prod-140051-deployment",
-            "UnauthRoleName": "amplify-morishima-web-prod-140051-unauthRole",
-            "StackName": "amplify-morishima-web-prod-140051",
-            "StackId": "arn:aws:cloudformation:ap-northeast-1:379668596230:stack/amplify-morishima-web-prod-140051/f9172670-4ee6-11ea-8651-0e42406983d0",
-            "AmplifyAppId": "d2tqsbopbeilf8"
+            "DeploymentBucketName": "amplify-morishima-web-prod-141205-deployment",
+            "UnauthRoleName": "amplify-morishima-web-prod-141205-unauthRole",
+            "StackName": "amplify-morishima-web-prod-141205",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:379668596230:stack/amplify-morishima-web-prod-141205/0ac7e580-5144-11ea-ab22-0693e5f01c30",
+            "AmplifyAppId": "d1otvnf69zicm9"
         }
     }
 }

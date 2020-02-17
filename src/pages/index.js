@@ -86,9 +86,6 @@ export const pageQuery = graphql`
     exterior: file(relativePath: { eq: "exterior.jpg" }) {
       ...fluidImage
     }
-    logo: file(relativePath: { eq: "logo-morishima.png" }) {
-      ...fluidImage
-    }
   }
 `
 
